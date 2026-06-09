@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>My AI Classifier</title>
 </head>
 <body>
+    <div class="container">
 
-    <h1>Teachable Machine Classifier</h1>
+        <div class="badge">AI Powered</div>
 
-    <button onclick="init()">Start Camera</button>
+        <h1>Emotion Detection</h1>
 
-    <div id="webcam-container"></div>
-    <div id="label-container"></div>
+        <p>
+            Real-time image classification using Teachable Machine
+            and TensorFlow.js
+        </p>
+
+        <button onclick="init()">Start Detection</button>
+
+        <div id="webcam-container"></div>
+
+        <div id="label-container"></div>
+
+        <div class="footer">
+            Powered by TensorFlow.js & Teachable Machine
+        </div>
+
+    </div>
+</body>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
